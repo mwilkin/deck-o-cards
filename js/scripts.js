@@ -2,8 +2,8 @@ $(document).ready(function() {
   $("#blanks form").submit(function(event) {
     event.preventDefault();
 
-    var blanks = ["item1", "item2", "item3", "item4", "item5"];
-    var newArray = [];
+    var suits = ["spades", "hearts", "clubs", "diamonds"];
+    var ranks = ["ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "jack", "queen", "king"];
 
     blanks.forEach(function(blank) {
       var userInput = $("input#" + blank).val();
